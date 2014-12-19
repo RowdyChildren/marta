@@ -1,0 +1,14 @@
+<h3>You're at <%= @station %> Station</h3>
+
+<div>
+	<%= @message %>
+</div>
+<br>
+<% @buses.each do |route, vehicle| %>
+	<!-- We loop through the hash printing out the keyes and values. If nothing is in the hash, nothing will print out; no harm, no foul.  -->
+	<div>
+		Route: <%= route %><br>
+		Vehicle <%= vehicle %> <br>
+	</div>
+	<hr>
+<% end %>
